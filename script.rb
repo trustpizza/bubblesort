@@ -6,4 +6,17 @@ def bubblesort(array)
             end
         end
     end
+    array
+end
+
+def bubblesort(array)
+    n = array.length
+    for k in 0..n-1
+        for i in 0..n-2
+            if array[i] > array[i+1]
+                array[i], array[i+1] = array[i+1], array[i]
+            end
+        end
+    end
+    array
 end
